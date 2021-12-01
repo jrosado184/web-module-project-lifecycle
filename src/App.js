@@ -31,6 +31,14 @@ class App extends React.Component {
       .catch((err) => {
         console.error(err);
       });
+    axios
+      .get(`https://api.github.com/users/${this.state.input}/followers`)
+      .then((res) => {
+        this.setState({
+          ...this.state,
+          followers: res.data,
+        });
+      });
   };
 
   componentDidMount() {

@@ -1,14 +1,14 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import React, { Component } from "react";
 import Follower from "./Follower";
 
 class FollowerList extends Component {
   render() {
-    console.log(this.props);
     return (
-      <div>
+      <div className='follower-con'>
         {this.props.followers.map((follower) => (
-          <Follower />
+          <Follower follower={follower} />
         ))}
       </div>
     );

@@ -22,7 +22,7 @@ code {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* height: auto; */
+  height: auto;
 }
 
 .user-img {
@@ -50,5 +50,27 @@ h1 {
   padding-bottom: 2%;
 }
 
+p {
+  font-weight: bold;
+}
+
+.follower-con {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  margin-left: 15%;
+  margin-bottom: 3%;
+  padding: 5%;
+}
+
 .follower-img {
+  width: 80%;
+  height: 20vh;
+  margin-left: 20%;
+  border: 2px solid black;
+}
+
+.follower-name {
+  font-size: 2rem;
+  margin-left: 20%;
 }
